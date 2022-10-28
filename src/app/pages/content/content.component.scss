@@ -1,0 +1,261 @@
+.content-header{
+    display: flex;
+    justify-content:flex-end;
+  }
+  
+  .content-header-button1{
+    border:1px solid rgba(219, 234, 253, 0.77);
+    border-radius: 10px;
+    color:#FFF;
+    background: linear-gradient(rgba(0, 79, 172, 1),rgba(51, 145, 208, 1));
+    height: 40px;
+    margin-top: 13px;
+    margin-right: 5px;
+  }
+  
+  .content-header-button2{
+    border:1px solid #1552A4;
+    border-radius: 10px;
+    color:#1552A4;
+    background-color: #DDECFF;
+    height: 40px;
+    margin-top: 13px;
+    margin-left: 5px;
+  }
+  .span{
+    margin-left: 5px;
+  }
+  
+  .ant-modal-header {
+    border-radius: 20px;
+  }
+  .content-body{
+   
+    justify-content: space-between;
+  }
+  
+  .content-body-1{
+    padding: 10px;
+  }
+  
+  .content-body-1-box{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    justify-content: space-between;
+  }
+  
+  .content-body-1-box-pay{
+  
+    border: 1px solid linear-gradient(rgba(0, 79, 172, 1),rgba(51, 145, 208, 1));
+    border-radius: 15px;
+    background: linear-gradient(rgba(0, 79, 172, 1),rgba(51, 145, 208, 1));
+    height: 30vh;
+    color: #fff;
+    padding: 15px;
+  }
+  
+  .content-body-1-box-taux{
+    border: 1px solid #fff;
+    border-radius: 15px;
+    background: #fff;
+    height: 30vh;
+  }
+  
+  .content-body-1-2{
+    border: 1px solid #fff;
+    border-radius: 15px;
+    background: #fff;
+    height: 40vh;
+    margin: 5px;
+    padding: 10px;
+  }
+  
+  
+  .content-body-1-2-graph-title{
+    font-size:15px;
+    color: rgba(47, 47, 48, 1);
+  }
+  
+  .content-body-1-2-graph-title-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .content-body-2{
+    border: 1px solid #fff;
+    border-radius: 15px;
+    background: #fff;
+    height: 72vh;
+    margin-top: 15px;
+    padding: 15px;
+  }
+  
+  .content-body-title{
+    display: flex;
+    flex-direction: row;
+  }
+  .content-body-title-1{
+    font-size:20px;
+    color: rgba(47, 47, 48, 1);
+  }
+  
+  .content-body-title-2{
+    border: rgba(219, 234, 253, 0.77);
+    border-radius: 20px;
+    color:#1552A4;
+    background-color: rgba(219, 234, 253, 0.77);
+    font-weight: bold;
+    margin-left: 15px;
+  }
+  .content-body-1-box-pay-title{
+   margin-bottom: 20px;
+   font-size: 10px;
+  }
+  
+  .content-body-1-box-pay-solde{
+    font-size: 10px;
+    font-weight: bold;
+  }
+  
+  
+  .content-body-1-box-pay-solde-1{
+    margin-top: -15px;
+    font-size: 30px;
+    font-weight: bolder;
+  }
+  
+  .content-body-1-box-pay-solde-dernier{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .content-body-1-box-pay-solde-dernier-credits{
+    margin-top: -15px;
+    text-align: left;
+  }
+  
+  .content-body-1-box-pay-solde-dernier-debits{
+    margin-top: -15px;
+    text-align: right;
+  }
+  
+  .content-body-1-box-pay-solde-dernier-credit,.content-body-1-box-pay-solde-dernier-debit{
+    font-size: 10px;
+    font-weight: bold;
+  }
+  
+  .content-body-1-box-pay-solde-dernier-credit-1,.content-body-1-box-pay-solde-dernier-debit-1{
+    margin-top: -10px;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  
+  .content-body-1-box-taux{
+    padding: 10px;
+  }
+  
+  .content-body-1-box-taux-succes{
+    font-size: 18px;
+    font-weight: bolder;
+    color: rgba(0,0,0,1);
+  }
+  
+  .content-body-1-box-taux-paiement,.content-body-1-box-nombre-requete{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .content-body-1-box-taux-paiement-valeur-titre,.content-body-1-box-nombre-requete-titre{
+    margin-top: -28px;
+    font-size: 10px;
+    color: rgba(0,0,0,1);
+  }
+  
+  .content-body-1-box-taux-paiement-valeur-nombre,.content-body-1-box-nombre-requete-valeur{
+    font-size: 25px;
+    color: #1552A4;
+    font-weight: bolder;
+  }
+  
+  .content-body-1-box-taux-paiement-graph,.content-body-1-box-nombre-requete-graph{
+    padding-top:10px;
+    padding-left:-5px;
+  }
+  
+  .content-body-2-table th{
+    font-weight: normal;
+  }
+  .content-body-2-table li {
+    border-radius: 10px;
+    padding: 12px 12px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -10px;
+    color:#3C3A3A;
+    font-size: 10px;
+  }
+  
+  .content-body-2-table .table-row {
+    background-color: #F5F9FD;
+    margin: 5px 0px 5px 0px;
+    color:#3C3A3A;
+    font-size: 11px;
+    font-weight: bold;
+  }
+  
+  .content-body-2-searchs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  #content-body-2-searchs-bar-1{
+    border: rgba(219, 234, 253, 0.77);
+    border-radius: 12px;
+    color:#1552A4;
+    background-color: rgba(219, 234, 253, 0.77);
+    margin-left: 13px;
+    font-size:12px;
+  }
+  
+  .content-body-2-searchs-bar{
+    border: rgba(219, 234, 253, 0.77);
+    border-radius: 10px;
+    color:#1552A4;
+    background-color: rgba(219, 234, 253, 0.77);
+  }
+  
+  
+  .table-header-statue .bt-enatente{
+    border: rgba(219, 234, 253, 0.77);
+    border-radius: 10px;
+    color:#1552A4;
+    background-color: rgba(219, 234, 253, 0.77);
+    padding: 5px 15px 5px 15px;
+    margin: -5px;
+  }
+  nz-select-topcontrol {
+    margin: 0 8px 10px 0;
+    width: 120px;
+    border-radius: 10px;
+  }
+  
+  nz-date-picker,
+  nz-range-picker {
+    margin: 0 8px 12px 0;
+    border: rgba(219, 234, 253, 0.77);
+    color:#1552A4;
+    border-radius: 10px;
+    background-color: rgba(219, 234, 253, 0.77);
+  }
+  
+  .ant-picker-input > input{
+    color:#1552A4;
+  }
+
+  nz-modal-container .ant-modal-footer {
+    display: none !important;
+  }
