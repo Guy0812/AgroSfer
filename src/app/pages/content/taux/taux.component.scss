@@ -1,0 +1,29 @@
+
+ 
+.content-body-1-box-taux-succes{
+    font-size: 18px;
+    font-weight: bolder;
+    color: rgba(0,0,0,1);
+  }
+
+  .content-body-1-box-taux-paiement,.content-body-1-box-nombre-requete{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .content-body-1-box-taux-paiement-valeur-titre,.content-body-1-box-nombre-requete-titre{
+    margin-top: -28px;
+    font-size: 10px;
+    color: rgba(0,0,0,1);
+  }
+  
+  .content-body-1-box-taux-paiement-valeur-nombre,.content-body-1-box-nombre-requete-valeur{
+    font-size: 25px;
+    color: #1552A4;
+    font-weight: bolder;
+  }
+  
+  .content-body-1-box-taux-paiement-graph,.content-body-1-box-nombre-requete-graph{
+    padding-top:10px;
+    padding-left:-5px;
+  }

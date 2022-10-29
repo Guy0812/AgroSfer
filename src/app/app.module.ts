@@ -25,12 +25,24 @@ import { NzSelectModule } from 'ng-zorro-antd/select';
 import { NzStatisticModule } from 'ng-zorro-antd/statistic';
 import { NzModalModule } from 'ng-zorro-antd/modal';
 import { ContentComponent } from './pages/content/content.component';
+import { HistoriquesComponent } from './pages/content/historiques/historiques.component';
+import { CompteComponent } from './pages/content/compte/compte.component';
+import { TauxComponent } from './pages/content/taux/taux.component';
+import { GrapheComponent } from './pages/content/graphe/graphe.component';
+import { ModalComponent } from './pages/content/modal/modal.component';
+import { NzTabsModule } from 'ng-zorro-antd/tabs';
+import { NzCheckboxModule } from 'ng-zorro-antd/checkbox';
 registerLocaleData(en);
 
 @NgModule({
   declarations: [
     AppComponent,
-    ContentComponent
+    ContentComponent,
+    HistoriquesComponent,
+    CompteComponent,
+    TauxComponent,
+    GrapheComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,
@@ -51,7 +63,9 @@ registerLocaleData(en);
     NzDatePickerModule,
     NzSelectModule,
     NzStatisticModule,
-    NzModalModule 
+    NzModalModule,
+    NzTabsModule,
+    NzCheckboxModule
   ],
   providers: [
     { provide: NZ_I18N, useValue: en_US }

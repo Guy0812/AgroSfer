@@ -1,34 +1,14 @@
 <nz-content >
     <div nz-row>
       <div class="content-header" nz-col nzSpan="24">
-        <button class="content-header-button1" nz-button nzType="default"  (click)="showModal()"> Envoyer de l'argent <span class="span"><svg width="22" height="9" viewBox="0 0 32 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <button class="content-header-button1" nz-button nzType="default" (click)="generalservice.showDialog = true" > Envoyer de l'argent <span class="span"><svg width="22" height="9" viewBox="0 0 32 12" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M25.613 11.1219L31.0461 5.56097L25.613 0L24.5155 1.12332L28.0749 4.76655H0V6.3554H28.0749L24.5155 9.99863L25.613 11.1219Z" fill="white"/>
           </svg></span></button>
         <button class="content-header-button2" nz-button nzType="default"> Recevoir de l'argent <span class="span"><svg width="22" height="9" viewBox="0 0 32 12" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M25.613 11.1219L31.0461 5.56097L25.613 0L24.5155 1.12332L28.0749 4.76655H0V6.3554H28.0749L24.5155 9.99863L25.613 11.1219Z" fill="#1552A4"/>
           </svg>
           </span></button>
-          <nz-modal
-          class="make_payment-modal"
-          nzClosable="false"
-          [nzFooter]="null"
-
-            [(nzVisible)]="isVisible"
-            [nzContent]="modalContent"
-            (nzOnCancel)="handleCancel()"
-          >
-      
-            <ng-template #modalContent>
-              <p>Modal Content</p>
-              <p>Modal Content</p>
-              <p>Modal Content</p>
-              <p>Modal Content</p>
-              <p>Modal Content</p>
-            </ng-template>
-
-        
-          </nz-modal>
-      
+       
       </div>
       
     </div>
@@ -36,127 +16,18 @@
       <div class="content-body-1" nz-col nzSpan="12">
         <div class="content-body-1-box" nz-col nzSpan="24">
           <div class="content-body-1-box-pay" nz-col nzSpan="13">
-             <p class="content-body-1-box-pay-title">Compte ArgroSfer Pay</p>
-             <div class="content-body-1-box-pay-soldes">
-             <p class="content-body-1-box-pay-solde">Solde de compte</p>
-             <p class="content-body-1-box-pay-solde-1">2.003.568 XOF</p>
-            </div>
-             <div class="content-body-1-box-pay-solde-dernier">
-              <div class="content-body-1-box-pay-solde-dernier-credits">
-                <p class="content-body-1-box-pay-solde-dernier-credit">Dernier Crédit</p>
-                <p class="content-body-1-box-pay-solde-dernier-credit-1">XOF 568.569</p>
-              </div>
-              <div class="content-body-1-box-pay-solde-dernier-debits">
-                <p class="content-body-1-box-pay-solde-dernier-debit">Dernier débit</p>
-                <p class="content-body-1-box-pay-solde-dernier-debit-1">XOF 136.201</p>
-              </div>
-             </div>
-          </div>
-          <div class="content-body-1-box-taux" nz-col nzSpan="10">
-            <div class="content-body-1-box-taux-succes" nz-col nzSpan="24">
-              Taux de succes
-            </div>
-            <div class="content-body-1-box-taux-paiement">
-              <div class="content-body-1-box-taux-paiement-valeur" nz-col nzSpan="14">
-                <p class="content-body-1-box-taux-paiement-valeur-nombre">70%</p>
-                <p class="content-body-1-box-taux-paiement-valeur-titre">Taux de Paiement</p>
-              </div>
-              <div class="content-body-1-box-taux-paiement-graph" nz-col nzSpan="10">
-                <span><svg width="80" height="25" viewBox="0 0 97 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3 32C4.56898 30.9735 6.21121 30.4263 7.89249 29.8661C9.81226 29.2264 11.7829 28.5697 13.7536 27.1633C14.8966 26.4155 16.0785 25.3625 17.2729 24.2984C19.5899 22.234 21.9537 20.128 24.1712 20.128C26.5231 20.128 28.7389 22.0859 30.9918 24.0765C32.2799 25.2147 33.5801 26.3635 34.9248 27.1633C38.2853 29.8015 41.9818 29.8015 45.3423 23.6456C46.8973 21.2412 48.4522 17.7476 49.9821 14.3102C52.0893 9.57568 54.149 4.94778 56.096 3.4193C58.5651 1.95079 60.8843 4.60203 63.2538 7.31084C64.4318 8.65742 65.6221 10.0182 66.8496 10.8942C68.5298 11.9935 70.2941 11.9935 72.0584 11.9935C73.8226 11.9935 75.5869 11.9935 77.2671 13.0928C78.8236 14.0185 80.3801 15.8017 81.9115 17.5562C84.0171 19.9685 86.0752 22.3265 88.0208 22.3265C89.869 22.3265 91.6333 20.5677 93.3976 18.8089C93.5983 18.6088 93.7991 18.4086 94 18.211" stroke="#0EC942" stroke-width="5" stroke-linecap="round"/>
-                  </svg>
-                  </span>
-              </div>
-            </div>
-            <div class="content-body-1-box-nombre-requete">
-              <div nz-col nzSpan="14">
-                <p class="content-body-1-box-nombre-requete-valeur">15/37</p>
-                <p class="content-body-1-box-nombre-requete-titre">Nombre de requees</p>
-              </div>
-              <div class="content-body-1-box-nombre-requete-graph" nz-col nzSpan="10">
-                <span><svg width="80" height="21" viewBox="0 0 100 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M97 28L95.6683 27.0553C94.415 26.1106 91.7517 24.2212 89.1667 23.2765C86.5817 22.3318 83.9183 22.3318 81.3333 18.5531C78.7483 14.7743 76.085 7.21671 73.5 4.38263C70.915 1.54854 68.2517 3.43793 65.6667 6.74437C63.0817 10.0508 60.4183 14.7743 57.8333 16.6637C55.2483 18.553 52.585 17.6084 50 16.6637C47.415 15.719 44.7517 14.7743 42.1667 15.719C39.5817 16.6637 36.9183 19.4977 34.3333 21.3871C31.7483 23.2765 29.085 24.2212 26.5 24.2212C23.915 24.2212 21.2517 23.2765 18.6667 20.9148C16.0817 18.553 13.4183 14.7743 10.8333 14.7743C8.24833 14.7743 5.585 18.553 4.33167 20.4424L3 22.3318" stroke="#F97A5D" stroke-width="5" stroke-linecap="round"/>
-                  </svg></span>
-              </div>
-            </div>
-          </div>
+          <app-compte></app-compte>
+        </div>
+        <div class="content-body-1-box-taux" nz-col nzSpan="10">
+          <app-taux></app-taux>
+        </div>
         </div>
         <div class="content-body-1-2" nz-col nzSpan="24">
-          <div nz-col nzSpan="24">
-            <p class="content-body-1-2-graph-title"> Graphe</p>
-          </div>
-          <div class="content-body-1-2-graph-title-1"nz-col nzSpan="24">
-            <div>
-            <button class="content-body-1-2-graph-envoyer" nz-button nzType="default"> Envoyer</button>
-            <span class="content-body-1-2-graph-recus"> Recus</span>
-          </div>
-            <nz-select id="content-body-1-2-graph-annee" [nzBorderless]="true" ngModel="Annee">
-              <nz-option nzValue="Annee" nzLabel="Annee"></nz-option>
-              <nz-option nzValue="Annee" nzLabel="Annee"></nz-option>
-            </nz-select>
-          </div>
+          <app-graphe></app-graphe>       
         </div>
       </div>
       <div class="content-body-2" nz-col nzSpan="12">
-        <div class="content-body-title" nz-col nzSpan="24">
-          <p class="content-body-title-1">Historiques</p>
-          <button class="content-body-title-2" nz-button nzType="default"> Transation en attente</button>
-        </div>
-        <div class="content-body-2-searchs" nz-col nzSpan="24">
-          <div  nz-col nzSpan="12">
-              <input class="content-body-2-searchs-bar" type="text" nz-input value="Rechercher"/>
-          </div>
-          <div nz-col nzSpan="6">
-            <nz-select id="content-body-2-searchs-bar-1" [nzBorderless]="true" ngModel="Demandes">
-              <nz-option nzValue="Demandes1" nzLabel="Demandes1"></nz-option>
-              <nz-option nzValue="Demandes" nzLabel="Demandes"></nz-option>
-            </nz-select>
-          </div>
-          <div nz-col nzSpan="6">
-            <nz-date-picker [nzSize]="size" ></nz-date-picker>
-          </div>
-        </div>
-        <div class="content-body-2-table" nz-col nzSpan="24">  
-              <li class="table-header">
-                <div nz-col nzSpan="6">Number/Name </div>
-                <div nz-col nzSpan="6">Date</div>
-                <div nz-col nzSpan="6">Montant</div>
-                <div nz-col nzSpan="6">Statue</div>
-              </li>
-              <li class="table-row">
-                <div nz-col nzSpan="6">42235</div>
-                <div nz-col nzSpan="6">John Doe</div>
-                <div nz-col nzSpan="6">$350</div>
-                <div class="table-header-statue" nz-col nzSpan="6"> <button class="bt-enatente" >En attente</button></div>
-              </li>
-              <li class="table-row">
-                <div nz-col nzSpan="6">42235</div>
-                <div nz-col nzSpan="6">John Doe</div>
-                <div nz-col nzSpan="6">$350</div>
-                <div class="table-header-statue" nz-col nzSpan="6"> <button class="bt-enatente" >En attente</button></div>
-              </li>
-              <li class="table-row">
-                <div nz-col nzSpan="6">42235</div>
-                <div nz-col nzSpan="6">John Doe</div>
-                <div nz-col nzSpan="6">$350</div>
-                <div class="table-header-statue" nz-col nzSpan="6"> <button class="bt-enatente" >En attente</button></div>
-              </li>
-              <li class="table-row">
-                <div nz-col nzSpan="6">42235</div>
-                <div nz-col nzSpan="6">John Doe</div>
-                <div nz-col nzSpan="6">$350</div>
-                <div class="table-header-statue" nz-col nzSpan="6"> <button class="bt-enatente" >En attente</button></div>
-              </li>
-              <li class="table-row">
-                <div nz-col nzSpan="6">42235</div>
-                <div nz-col nzSpan="6">John Doe</div>
-                <div nz-col nzSpan="6">$350</div>
-                <div class="table-header-statue" nz-col nzSpan="6"> <button class="bt-enatente" >En attente</button></div>
-              </li>
-              
-        
-        </div>
-        
-      </div>
+      <app-historiques></app-historiques>
+    </div>
     </div>
   </nz-content>

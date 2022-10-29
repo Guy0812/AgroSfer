@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GeneralserviceService } from '../services/generalservice.service';
 
 @Component({
   selector: 'app-content',
@@ -6,24 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./content.component.scss']
 })
 export class ContentComponent implements OnInit {
-  size: 'large' | 'small' | 'default' = 'default';
-
-
-  isVisible = false;
-  isConfirmLoading = false;
-
-  constructor() {}
-
-  showModal(): void {
-    this.isVisible = true;
-  }
-
-
-
-  handleCancel(): void {
-    this.isVisible = false;
-  }
-  
+  constructor(public generalservice:GeneralserviceService) {}
 
   ngOnInit(): void {
   }

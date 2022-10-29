@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { GeneralserviceService } from './pages/services/generalservice.service';
 
 
 
@@ -8,6 +9,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  title(title: any) {
+    throw new Error('Method not implemented.');
+  }
   isCollapsed = true;
+  constructor(public generalservice:GeneralserviceService) {}
+
  
 }
