@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
 import { GeneralserviceService } from '../../services/generalservice.service';
 
 @Component({
@@ -16,15 +17,16 @@ export class ModalComponent implements OnInit {
     { label: 'Apple', value: 'Apple' },
     { label: 'Pear', value: 'Pear', checked: true },
   ];
+
+
+  validateForm!: UntypedFormGroup;
+
   constructor(public generalservice:GeneralserviceService) {}
 
-  log(value: object[]): void {
-    console.log(value);
-  }
-
-  ngOnInit(): void {
-  }
   
+  ngOnInit(): void {
+    
+  }
   
 
 }

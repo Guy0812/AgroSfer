@@ -32,6 +32,9 @@ import { GrapheComponent } from './pages/content/graphe/graphe.component';
 import { ModalComponent } from './pages/content/modal/modal.component';
 import { NzTabsModule } from 'ng-zorro-antd/tabs';
 import { NzCheckboxModule } from 'ng-zorro-antd/checkbox';
+import { EnvoierapideComponent } from './pages/content/modal/envoierapide/envoierapide.component';
+import { EnvoiegrouperComponent } from './pages/content/modal/envoiegrouper/envoiegrouper.component';
+
 registerLocaleData(en);
 
 @NgModule({
@@ -42,7 +45,10 @@ registerLocaleData(en);
     CompteComponent,
     TauxComponent,
     GrapheComponent,
-    ModalComponent
+    ModalComponent,
+    EnvoiegrouperComponent,
+    EnvoierapideComponent
+
   ],
   imports: [
     BrowserModule,
@@ -65,7 +71,7 @@ registerLocaleData(en);
     NzStatisticModule,
     NzModalModule,
     NzTabsModule,
-    NzCheckboxModule
+    NzCheckboxModule,
   ],
   providers: [
     { provide: NZ_I18N, useValue: en_US }
